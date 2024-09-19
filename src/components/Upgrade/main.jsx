@@ -1,8 +1,14 @@
-import { upgradeData } from "@/data/staticData";
+export const upgradeData = [
+  "Bedroom",
+  "Living Room",
+  "Bathroom",
+  "Kitchen",
+  "Office",
+];
 
 export default function UpgradeComponents() {
   return (
-    <section className="w-full bg-white bg-review bg-center px-5">
+    <section className="w-full bg-white bg-review bg-center px-5 py-10">
       <div className="layout bg-upgrade flex items-center justify-around rounded-2xl">
         <h2 className="text-white font-semibold text-5xl max-w-[544px]">
           Upgrade your bathroom for a fresh, stylish vibe.

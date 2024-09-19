@@ -1,6 +1,6 @@
 export default function ReviewsComponents() {
   return (
-    <section className="w-full bg-[#F7F7F7] bg-review bg-center py-[140px] px-20">
+    <section className="w-full bg-[#F7F7F7] bg-review bg-center py-20 px-20">
       <div className="layout grid gap-[72px]">
         <div className="flex justify-between gap-10">
           <h1 className="font-semibold text-[#101010] text-2xl min-w-max">

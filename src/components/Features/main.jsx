@@ -53,7 +53,7 @@ export default function FeaturesComponents() {
   }, [windowWith]);
 
   return (
-    <section className="w-full bg-white bg-review bg-center pt-[140px] pb-14 px-20">
+    <section className="w-full bg-white bg-review bg-center py-20 px-20">
       <div className="layout">
         <div className="flex justify-between gap-[clamp(2.5rem,-3.192rem+8.894vw,4.813rem)]">
           <h1 className="font-semibold text-[#101010] text-2xl min-w-max">

@@ -6,7 +6,7 @@ import Versatile from "./components/Versatile/main.jsx";
 import Upgrade from "./components/Upgrade/main.jsx";
 
 
-function App() {
+function HomePage() {
   return (
     <div className="relative w-full overflow-hidden">
       <Navbar />
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;

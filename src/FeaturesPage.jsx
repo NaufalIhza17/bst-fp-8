@@ -5,12 +5,12 @@ import Footer from "./components/Footer/main.jsx";
 
 function FeaturesPage() {
   return (
-    <>
+    <div className="relative w-full overflow-hidden">
       <Navbar />
       <div className="h-[100px] w-screen"></div>
       <Features />
       <Footer />
-    </>
+    </div>
   );
 }
 

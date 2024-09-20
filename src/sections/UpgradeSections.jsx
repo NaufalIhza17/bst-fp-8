@@ -6,7 +6,7 @@ export const upgradeData = [
   "Office",
 ];
 
-export default function UpgradeComponents() {
+export default function UpgradeSections() {
   return (
     <section className="w-full bg-white bg-review bg-center px-3 sm:px-5 py-10">
       <div className="max-w-[1440px] w-full mx-auto bg-upgrade flex flex-col sm:flex-row items-start md:items-center justify-around rounded-2xl px-5 gap-10 py-20 lg:py-[140px]">

@@ -1,4 +1,4 @@
-export default function HeroComponents() {
+export default function HeroSections() {
   return (
     <section className="w-full text-white bg-primary-blue py-12 lg:pt-[83px] px-10 lg:px-16 lg:pb-16 overflow-hidden">
       <div className="max-w-[1440px] w-full mx-auto relative">

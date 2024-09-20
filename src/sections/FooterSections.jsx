@@ -64,7 +64,7 @@ export const footerData = [
   },
 ];
 
-export default function FooterComponents() {
+export default function FooterSections() {
   return (
     <section className="w-full bg-[#101010] py-10 lg:py-14 px-10 lg:px-[100px] text-[#C2C2C2]">
       <div className="max-w-[1440px] w-full mx-auto">

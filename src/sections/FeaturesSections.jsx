@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import useWindowWidth from "../../hooks/useWindowHeight/main.jsx";
+import useWindowWidth from "../hooks/useWindowHeight/main.jsx";
 
 export const featuresData = [
   {
@@ -34,7 +34,7 @@ export const featuresData = [
   },
 ];
 
-export default function FeaturesComponents() {
+export default function FeaturesSections() {
   const windowWith = useWindowWidth();
   const [isShort, setIsShort] = useState(false);
   const [isOpenArray, setIsOpenArray] = useState(featuresData.map(() => false));
@@ -53,15 +53,15 @@ export default function FeaturesComponents() {
   }, [windowWith]);
 
   return (
-    <section className="w-full bg-white bg-review bg-center py-20 px-20">
-      <div className="layout">
-        <div className="flex justify-between gap-[clamp(2.5rem,-3.192rem+8.894vw,4.813rem)]">
+    <section className="w-full bg-white bg-review bg-center py-14 lg:py-20 px-10 lg:px-20">
+      <div className="max-w-[1440px] mx-auto w-full">
+        <div className="flex flex-col lg:flex-row justify-between gap-[clamp(2.5rem,-3.192rem+8.894vw,4.813rem)]">
           <h1 className="font-semibold text-[#101010] text-2xl min-w-max">
             <span className="text-[#FF8A00]">/ </span>Superior Features
           </h1>
-          <div className="grid gap-16 max-w-[980px]">
+          <div className="grid gap-12 lg:gap-16 max-w-[980px]">
             <div className="grid gap-4">
-              <p className="font-medium leading-none text-[32px] text-[#101010]">
+              <p className="font-medium leading-none text-2xl lg:text-[32px] text-[#101010]">
                 Immerse yourself in the unparalleled experience of enjoying the
                 inherent advantages seamlessly{" "}
                 <span className="text-[#667085]">
@@ -81,7 +81,7 @@ export default function FeaturesComponents() {
                 return (
                   <div
                     key={idx}
-                    className={`py-10 grid border-t ${
+                    className={`py-6 lg:py-10 grid border-t ${
                       isOpen ? "border-[#101010]" : "border-[#EDEDED]"
                     }`}
                     onClick={() => changeIsOpen(idx)}
@@ -113,7 +113,7 @@ export default function FeaturesComponents() {
                       width={980}
                       height={375}
                       className={`rounded-2xl ${
-                        isOpen ? "mt-16" : "opacity-0 invisible w-0 h-0"
+                        isOpen ? "mt-10 lg:mt-16" : "opacity-0 invisible w-0 h-0"
                       }`}
                     />
                   </div>

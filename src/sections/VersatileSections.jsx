@@ -1,4 +1,4 @@
-export default function VersatileComponents() {
+export default function VersatileSections() {
   return (
     <section className="w-full bg-white bg-review bg-center py-14 lg:py-20 px-10 lg:px-20">
       <div className="max-w-[1440px] w-full mx-auto grid gap-9 lg:gap-[72px]">

@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { useLocation } from 'react-router-dom';
 
-export default function NavbarComponents() {
+export default function NavbarSections() {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+
+  const currentPath = location.pathname;
 
   const handleIsOpen = () => {
     setIsOpen(!isOpen);
@@ -14,29 +18,27 @@ export default function NavbarComponents() {
           <div className="layout grid grid-cols-2 items-center">
             <div className="font-satoshi font-bold text-[40px]">Jinligogo</div>
             <div className="font-satoshi flex gap-4 lg:gap-10 min-w-max justify-end max-sm:hidden">
-              <a href="/" className="nav">Home</a>
-              <a href="/reviews" className="nav">Reviews</a>
-              <a href="/features" className="nav">Features</a>
+              <a href="/" className={`nav ${currentPath === "/" ? "active" : ""}`}>Home</a>
+              <a href="/reviews" className={`nav ${currentPath === "/reviews" ? "active" : ""}`}>Reviews</a>
+              <a href="/features" className={`nav ${currentPath === "/features" ? "active" : ""}`}>Features</a>
             </div>
             <div className="sm:hidden flex justify-end">
               <button onClick={handleIsOpen} className={`transition-all ${isOpen ? 'rotate-90' : 'rotate-0'}`}>
                 <svg
                   fill="#ffffff"
                   viewBox="0 0 32 32"
-                  enable-background="new 0 0 32 32"
+                  enableBackground="new 0 0 32 32"
                   id="Glyph"
                   version="1.1"
-                  xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
                   stroke="#ffffff"
                   className="w-10 h-10"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <path

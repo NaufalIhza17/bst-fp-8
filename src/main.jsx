@@ -1,23 +1,23 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
-import Reviews from "./ReviewsPage.jsx";
-import Features from "./Features.jsx";
+import HomePage from "./HomePage.jsx";
+import ReviewsPage from "./ReviewsPage.jsx";
+import FeaturesPage from "./FeaturesPage.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomePage />,
   },
   {
     path: "/reviews",
-    element: <Reviews />,
+    element: <ReviewsPage />,
   },
   {
     path: "/features",
-    element: <Features />,
+    element: <FeaturesPage />,
   },
 ]);
 

@@ -1,18 +1,18 @@
 export default function HeroComponents() {
   return (
-    <section className="w-full text-white bg-primary-blue pt-[83px] px-16 pb-16 overflow-hidden">
-      <div className="layout relative">
+    <section className="w-full text-white bg-primary-blue py-12 lg:pt-[83px] px-10 lg:px-16 lg:pb-16 overflow-hidden">
+      <div className="max-w-[1440px] w-full mx-auto relative">
         <img
           src={"/images/big-bin.svg"}
           alt=""
           width={787}
           height={1217}
-          className="absolute -left-24"
+          className="absolute sm:-left-24 max-sm:-right-1/2 max-sm:-bottom-1/2 max-sm:min-w-max max-sm:h-full"
         />
-        <div className="grid gap-28 justify-end relative z-10">
-          <div className="grid gap-14">
+        <div className="grid gap-16 lg:gap-28 justify-end relative z-10">
+          <div className="grid gap-8 lg:gap-14">
             <div className="grid gap-4">
-              <h1 className="font-semibold text-5xl max-w-[551px] leading-none">
+              <h1 className="font-semibold text-[40px] sm:text-5xl max-w-[551px] leading-none">
                 Jinligogo 2Pack 3.5 Gallon, 2.2 Gallon Bathroom Small.
               </h1>
               <p className="max-w-[374px]">
@@ -20,7 +20,7 @@ export default function HeroComponents() {
                 free Prime shipping.
               </p>
             </div>
-            <button className="bg-[#4A5465] px-[30px] py-[18px] rounded-full w-fit">
+            <button className="transition-colors bg-[#4A5465] hover:bg-[#38404d] active:bg-[#303742] px-[30px] py-[18px] rounded-full w-fit">
               Shop Now $89.00
             </button>
           </div>
@@ -33,7 +33,7 @@ export default function HeroComponents() {
                 money-back guarantee. Your 100%{" "}
               </p>
             </div>
-            <div className="flex gap-10">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-10">
               <div className="flex gap-3">
                 <img
                   src={"/images/small-bin-1.svg"}

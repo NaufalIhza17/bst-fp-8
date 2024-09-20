@@ -66,13 +66,13 @@ export const footerData = [
 
 export default function FooterComponents() {
   return (
-    <section className="w-full bg-[#101010] py-14 px-[100px] text-[#C2C2C2]">
-      <div className="layout">
-        <div className="flex justify-between gap-10 border-b border-[#606060]">
+    <section className="w-full bg-[#101010] py-10 lg:py-14 px-10 lg:px-[100px] text-[#C2C2C2]">
+      <div className="max-w-[1440px] w-full mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 border-b border-[#606060] pb-10">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-6 max-w-[467px]">
               <div className="font-bold text-[40px] text-white">Jinligogo</div>
-              <p className="font-switzer w-3/5">
+              <p className="font-switzer lg:w-3/5">
                 Making health datamore accessible for better care at lower
                 costs.
               </p>
@@ -83,8 +83,8 @@ export default function FooterComponents() {
                 className="font-general-sans bg-transparent h-fit focus:outline-none pl-6"
                 placeholder="youremail@gmail.com"
               />
-              <button className="flex gap-[10px] py-4 px-8 bg-[#4A5465] rounded-full">
-                <p>Submit</p>
+              <button className="flex gap-1 sm:gap-[10px] py-2 sm:py-4 px-4 sm:px-8 bg-[#4A5465] rounded-full">
+                <p className="max-sm:hidden">Submit</p>
                 <img
                   src={"/icons/arrow.svg"}
                   alt=""
@@ -94,7 +94,7 @@ export default function FooterComponents() {
               </button>
             </div>
           </div>
-          <div className="flex gap-[clamp(1rem,-7.615rem+13.462vw,4.5rem)] py-10">
+          <div className="flex gap-[clamp(1rem,-7.615rem+13.462vw,4.5rem)]">
             {footerData.map((data) => (
               <div key={data.title} className="flex flex-col gap-6">
                 <h3 className="font-semibold text-lg text-white">
@@ -111,12 +111,12 @@ export default function FooterComponents() {
             ))}
           </div>
         </div>
-        <div className="uppercase font-satoshi font-bold text-[clamp(9rem,-3.923rem+20.192vw,14.25rem)] leading-none text-center">
+        <div className="uppercase font-satoshi font-bold text-[clamp(3rem,-0.961rem+16.901vw,14.25rem)] leading-none text-center">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white/0 via-white/50 to-white/0">
             JINLIGOGO
           </span>
         </div>
-        <div className="flex justify-between items-center mt-5">
+        <div className="flex justify-between items-center mt-5 text">
           <p>2024 &#169; Jinligogo Copyrights</p>
           <div className="flex gap-6">
             <img

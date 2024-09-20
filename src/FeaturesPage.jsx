@@ -7,6 +7,7 @@ function FeaturesPage() {
   return (
     <>
       <Navbar />
+      <div className="h-[100px] w-screen"></div>
       <Features />
       <Footer />
     </>

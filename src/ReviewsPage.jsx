@@ -7,6 +7,7 @@ function ReviewsPage() {
   return (
     <>
       <Navbar />
+      <div className="h-[100px] w-screen"></div>
       <Reviews />
       <Footer />
     </>
